@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <script type="text/javascript" src="./../cadastrarAnimais.js"></script>
+        <title> Cadastrar Dogs</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" type = "text/css" href="./../bootstrap.min.css">
+        <link rel="stylesheet" type = "text/css" href="./../estilos.css">
+        
+    </head>
+    <body>
+        <header class="container-fluid bg-dark">
+            <div class="row">
+                <a id='home' href="./../index.html" class="col-7 h1"> Bio Tec</a> 
+                <nav id='menu'class="col-5"> 
+                    <a href="./cadastrarAnimais.html">Cadastrar Animais </a>
+                    <a  href="./cadastrarBiomas.html">Cadastrar Biomas</a>
+                    <a  href="./animais.html">Ver Animais</a>
+                    <a  href="./biomas.html">Ver Biomas</a>
+                </nav>
+             </div>
+        </header>
+        <main class=" container-sm bg-dark shadow ">
+            <h2 class="text-light text-center">  Cadastro de Animais</h2>
+
+            <form id='form-cadastro' method="POST" >
+                <input type ="url" class = 'form-control'id="foto" placeholder="Insira o Link da imagem">
+                <input type = "text" class = 'form-control' id="nomeCientifico" placeholder="Insira o nome Cientifico">
+                <input type = "text" class = 'form-control' id="nomePopular" placeholder="Insira o nome popular">
+                <input type = "text" class = 'form-control' id="tipo" placeholder="Insira Tipo">
+                <input type = "text" class = 'form-control' id="estadoConservacao" placeholder="Insira Estado de Conservação">
+                <input type = "text" class = 'form-control' id="bioma" placeholder="Biomas">
+                <textarea id='descricao' class = 'form-control' placeholder=" Insira a descrição">  </textarea>                
+                <div class='row' style="display: flex; align-items: center;">
+                    <input  type="button" class= ' btn btn-primary col-6' style='margin:auto auto' id="btn-cadastrar" value="Cadastrar">
+                </div>
+                <div id='msg-resp' class='text-success'></div>
+            </form>
+
+        </main>
+        <footer>
+
+        </footer>
+        <script>
+            const btnCadastrar = document.getElementById('btn-cadastrar')
+            
+            btnCadastrar.onclick = (e) => {
+                e.preventDefault()
+                cadastrar()
+            }
+        </script>
+    </body>
+</html>

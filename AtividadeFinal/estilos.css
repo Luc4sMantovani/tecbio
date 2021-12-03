@@ -1,0 +1,63 @@
+body{
+    background: url('./imgs/mountains.jpg');
+    
+    background-size: cover;
+}
+header{
+    margin-bottom: 30px;
+}
+main{
+    padding:10px;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#home{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+a:hover{
+    color:black;
+    cursor: pointer;
+    background-color: whitesmoke;
+    
+}
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+th{
+    vertical-align: middle;
+    text-align: center;
+}
+td{
+    padding: 2px;
+    margin:1px;
+    text-align: center;
+}
+input{
+    margin-bottom: 6px;
+   
+}
+form{
+    max-width: 65%;
+    margin: auto auto;
+}
+textarea{
+    height: 150px;
+    resize: none;
+    margin-bottom: 8px;
+    padding: 1px;
+}
+#menu>a{
+    padding: 3px;
+}
+
+table{
+    max-height: 320px;
+    
+}

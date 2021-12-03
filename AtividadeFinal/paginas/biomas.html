@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script type="text/javascript" src="./../listarBiomas.js"></script>
+        <script type="text/javascript" src="./../getBiomas.js"></script>
+        
+        <title> Biomas</title>
+       
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" type = "text/css" href="./../bootstrap.min.css">
+        <link rel="stylesheet" type = "text/css" href="./../estilos.css">
+        
+    </head>
+    <body>
+        <header class="container-fluid bg-dark">
+            <div class="row">
+                <a id='home' href="./../index.html" class="col-7 h1"> Bio Tec</a> 
+                <nav id='menu'class="col-5"> 
+                    <a href="./cadastrarAnimais.html">Cadastrar Animais </a>
+                    <a  href="./cadastrarBiomas.html">Cadastrar Biomas</a>
+                    <a  href="./animais.html">Ver Animais</a>
+                    <a  href="./biomas.html">Ver Biomas</a>
+                </nav>
+             </div>
+        </header>
+        <main class=" container-md bg-dark shadow ">
+            <h2 class="text-light text-center"> Tabela Biomas</h2>
+            <table id="tabela_weapons" class="table table-dark">
+                <thead>
+                    <tr>
+                        
+                        <th> Foto </th>
+                        <th> Nome</th>
+                        <th> Area Estimada</th>
+                        <th> Descrição</th>
+                        
+                    </tr>
+                    
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </main>
+        <footer>
+
+        </footer>
+        <script>
+              const endereco = 'https://biotec-6f2cb-default-rtdb.firebaseio.com/'
+              window.onload = getBiomas(endereco)
+        </script>
+    </body>
+
+</html>
