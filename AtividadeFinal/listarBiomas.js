@@ -28,7 +28,7 @@ function listarBiomas(bioma){
 
            
     const info = document.createElement("td")
-    const info_text = document.createTextNode(bioma.areaEstimada)
+    const info_text = document.createTextNode(bioma.areaEstimada + "km2")
     info.appendChild(info_text)
     linha.appendChild(info)
 
@@ -36,7 +36,7 @@ function listarBiomas(bioma){
         
     const descricao = document.createElement("td")
     const descricao_text = document.createTextNode(bioma.descricao)
-    descricao.setAttribute('style','text-align:justify; max-height:200px;overflow:hidden')
+    descricao.setAttribute('style','text-align:justify; max-width: 80%;max-height:200px;overflow:hidden')
     descricao.appendChild(descricao_text)
     linha.appendChild(descricao) 
     tabela.appendChild(linha)

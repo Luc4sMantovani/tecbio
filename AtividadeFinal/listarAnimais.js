@@ -49,6 +49,7 @@ function listarAnimais(animal){
         
     const descricao = document.createElement("td")
     const descricao_text = document.createTextNode(animal.descricao)
+    descricao.setAttribute('style','text-align:justify; max-height:200px;overflow:hidden')
     descricao.appendChild(descricao_text)
     linha.appendChild(descricao) 
     tabela.appendChild(linha)

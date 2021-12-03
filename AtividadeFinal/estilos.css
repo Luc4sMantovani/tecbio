@@ -8,6 +8,7 @@ header{
 }
 main{
     padding:10px;
+    margin-bottom: 80px;
 }
 a{
     text-decoration: none;
@@ -35,8 +36,7 @@ th{
     text-align: center;
 }
 td{
-    padding: 2px;
-    margin:1px;
+    padding: 10px 15px;
     text-align: center;
 }
 input{
